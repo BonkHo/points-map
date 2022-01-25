@@ -1,5 +1,6 @@
 import React from "react";
-import { useData } from "./hooks/useData";
+import { useWorldAtlas } from "./hooks/useWorldAtlas";
+import { useCities } from "./hooks/useCities";
 import "./App.css";
 
 // Components
@@ -8,15 +9,16 @@ import CircleMark from "./components/CircleMark";
 const App = () => {
 	const width = 1200;
 	const height = 500;
-	const data = useData();
+	const worldAtlas = useWorldAtlas();
+	const cities = useCities();
 
-	if (!data) {
+	if (!worldAtlas) {
 		return <pre>"Loading"</pre>;
 	}
 
 	return (
 		<svg width={width} height={height}>
-			<CircleMark data={data} />
+			<CircleMark data={worldAtlas} />
 		</svg>
 	);
 };
