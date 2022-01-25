@@ -4,7 +4,7 @@ import { useCities } from "./hooks/useCities";
 import "./App.css";
 
 // Components
-import Mark from "./components/CircleMark";
+import Mark from "./components/Mark";
 
 const App = () => {
 	const width = 1200;
@@ -12,7 +12,7 @@ const App = () => {
 	const worldAtlas = useWorldAtlas();
 	const cities = useCities();
 
-	if (!worldAtlas) {
+	if (!worldAtlas || !cities) {
 		return <pre>"Loading"</pre>;
 	}
 
