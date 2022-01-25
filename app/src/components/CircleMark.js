@@ -5,7 +5,7 @@ const projection = geoNaturalEarth1();
 const path = geoPath(projection);
 const graticule = geoGraticule();
 
-const CircleMark = ({ data: { land, interiors } }) => {
+const Mark = ({ data: { land, interiors } }) => {
 	return (
 		<g className="marks">
 			<path className="sphere" d={path({ type: "Sphere" })}></path>
@@ -18,4 +18,4 @@ const CircleMark = ({ data: { land, interiors } }) => {
 	);
 };
 
-export default CircleMark;
+export default Mark;

@@ -4,7 +4,7 @@ import { useCities } from "./hooks/useCities";
 import "./App.css";
 
 // Components
-import CircleMark from "./components/CircleMark";
+import Mark from "./components/CircleMark";
 
 const App = () => {
 	const width = 1200;
@@ -18,7 +18,7 @@ const App = () => {
 
 	return (
 		<svg width={width} height={height}>
-			<CircleMark data={worldAtlas} />
+			<Mark worldAtlas={worldAtlas} cities={cities} />
 		</svg>
 	);
 };
