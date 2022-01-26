@@ -3,7 +3,7 @@ body {
 }
 
 .marks .land {
-	fill: #29cf55;
+	fill: #85d59a;
 }
 
 .marks .interiors {
@@ -17,5 +17,10 @@ body {
 }
 
 .marks .sphere {
-	fill: #7abfff;
+	fill: #c7e4ff;
+}
+
+circle {
+	fill: black;
+	opacity: 0.5;
 }

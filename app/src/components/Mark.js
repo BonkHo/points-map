@@ -16,7 +16,7 @@ const Mark = ({ worldAtlas: { land, interiors }, cities }) => {
 			<path className="interiors" d={path(interiors)}></path>
 			{cities.map((d) => {
 				const [x, y] = projection([d.lng, d.lat]);
-				return <circle cx={x} cy={y} r={2} />;
+				return <circle cx={x} cy={y} r={1.5} />;
 			})}
 		</g>
 	);
